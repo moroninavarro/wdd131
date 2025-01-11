@@ -7,32 +7,63 @@ body {
 header {
   background: lightpink;
   padding: 2rem;
-  grid-column: 1 / 4;
+  grid-column: 1 / 7;
 }
 
 .left-sidebar {
   background: lightblue;
-  grid-column: 1 / 2;
+  grid-column: 1/ 2;
+  
 }
 
 main {
   background: coral;
-  grid-column: 2 / 3;
+  grid-column: 1/7;
+  
+  grid-row: 4/2;
 }
 
 .right-sidebar {
   background: yellow;
-  grid-column: 3 / 4;
+
+  grid-column: 3/ 7;
+ 
 }
 
 footer {
   background: wheat;
-  padding: 2rem;
-  text-align: center;
-  grid-column: 1 / 4;
+  padding: 7rem;
+  text-align:center;
+  grid-column: 1 / 7;
 }
 
 .left-sidebar,
 .right-sidebar {
   padding: 1rem;
+}
+
+
+.navigation {
+	list-style: none;
+	display:flex;
+  
+	background-color: #333;
+	align-items:center;
+  
+}
+.navigation li {
+	flex: 1 1 auto; /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
+}
+.navigation a {
+	display: flex;
+	color: #eee;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+}
+
+.navigation a:hover {
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: yellow;
 }

@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Sansita", 'Times New Roman', Times, serif;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 10px;
+}
+
+
+header{
+    background-color: #ccc;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgb (0 0 0 / 0.1);
+    grid-column: 1 / 7;
+}
+
+
+main{
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    grid-column: 1/ 7;
+}
+
+h1{
+    display: grid;
+    font-size: 2rem;
+    justify-content: center;
+    
+}
+
+.navigation {
+	list-style: none;
+	display:flex;
+  
+	background-color: #333;
+	align-items:center;
+  
+}
+.navigation li {
+	flex: 1 1 auto; /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
+}
+.navigation a {
+	display: flex;
+	color: #eee;
+	padding: 1rem;
+	text-decoration: none;
+	text-align:center;
+    justify-content:space-around;
+    
+}
+
+.navigation a:hover {
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: rgb(255, 255, 255);
+}
+
+@media (min-width: 640px){
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}
+
+.card {
+    
+    background-color: #6e6969;
+    display: grid;
+    justify-content:space-between;
+    margin: 1rem;
+    border: 1px solid gray;
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
+    
+}
+    
+h2{
+    display: grid;
+    background-color: #002e91;
+    color: #ffffff;
+    justify-content: center;
+    padding: 10px;
+}
+
+.me{
+    background-color: #6e6969;
+    display: grid;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
+    float: right;
+    
+}
+
+h3{
+    display: grid;
+  
+    color: #000000;
+    justify-content: center;
+    padding: 1px;
+    
+    
+}
+
+
+.web {
+    color: #eee;
+    
+	display: grid;
+	padding: 1rem;
+	text-decoration:dotted;
+	text-align:left;
+    justify-content:space-between;
+    
+   
+}
+.links {
+    
+    list-style:none;
+	align-items:center;
+    display: grid;
+	color: #eee;
+	padding: 1rem;
+	text-align:center;
+    justify-content:space-around;
+    
+}
+
+footer {
+    background: rgb(5, 84, 148);
+    padding: 0.75rem;
+    text-align:center;
+    grid-column: 1 / 7;
+    
+  }
+footer p {
+    color: #ffffff;
+    margin: 0.25rem;
+	font-weight: 600;
+	font-family: hebrew;
+
+}
+
+
+p {
+	margin: 0.25rem;
+	
+	padding: 0.5rem 0.75rem;
+	
+}
+
+.highlight {
+	color: rgb(255, 255, 255);
+	font-weight: 700;
+	font-family: hebrew;
+}
