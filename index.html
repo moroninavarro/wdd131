@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="This is my page of one of my assignments and I will be working on it during this course WDD 131" author="Moroni Alanis Navarro">
     <title>WDD 131 - Dynamic Web Fundamentals - Moroni Alanis Navarro</title>
     
     <link rel="stylesheet" type="text/css" href="styles/base.css">
 
-    <script src="scripts/getdates.js" defer></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,57 +21,58 @@
                 <li><a href="https://www.linkedin.com/feed/?doFeedRefresh=true&nis=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BHELH3yQWT7qwhFKf8RqpKw%3D%3D">LinkedIn</a></li>
                 <li><a href="https://byupw.instructure.com/">I-Learn</a></li>
                 <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/15?lang=eng&id=p7#p7">Scripture</a></li>
-                <li><a href="this will be a placeholder for now"> Final Project</a></li>
+                <li><a href=""> Final Project</a></li>
             </ul>
         </nav>
         
     </header>
-
-
-    <main>
-            <section class="card"> 
-                <h2>About me</h2>
-                <div class="me">
-                    <img src="images/me.jpg" alt="introduce Myself" width="200" height="136">   
-                    <p>My name is Moroni and this is my page. I was born in Mexico and I live with my family in Tijuana. I am currently studying at BYU Idaho Online. 
-                        I really enjoy spend time playing Chess with friends and basketball. I love to travel and programming.</p>
-                        <h3>Tijuana, Mexico</h3>
-                        <h4>Official Flag of Mexico</h4>
-                        <img src="images/flag.png" alt="Mexico Flag" width="200">   
-                        <p>Tijuana is a Mexican city located in the state of Baja California. It is the second most populated city in Mexico with a total of 1,810,645 inhabitants in 2020. It is classified as a global city as a cultural and commercial center, as well as a dominant manufacturing hub in North America.</p>
-                    </div>
-                    </section>
-                
-                
-                <section class="card">  
-                    <div class="web"> 
-                        <h2>Web Dev Resources</h2>
-                        <ul class="links">
-                            <li><a href="https://dev.to/">Dev.to Community</a></li>
-                            <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-                            <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
-                            <li><a href="https://www.w3schools.com/"> W3 Schools</a></li>
-                            <li><a href="https://www.udemy.com/es/"> Udemy</a></li>
-                            <li><a href="https://imageplaceholder.net/"> Image Placeholder</a></li>
-                        </ul>
-                    </div>
-                </section>
-                
-    </main>
     
-    <footer>
+    
+    <main>
+        <section class="card"> 
+            <h2>About me</h2>
+            <div class="me">
+                <img src="images/me.jpg" alt="introduce Myself" width="200" height="136">   
+                <p>My name is Moroni and this is my page. I was born in Mexico and I live with my family in Tijuana. I am currently studying at BYU Idaho Online. 
+                    I really enjoy spend time playing Chess with friends and basketball. I love to travel and programming.</p>
+                    <h3>Tijuana, Mexico</h3>
+                    <h4>Official Flag of Mexico</h4>
+                    <img src="images/flag.png" alt="Mexico Flag" width="200">   
+                    <p>Tijuana is a Mexican city located in the state of Baja California. It is the second most populated city in Mexico with a total of 1,810,645 inhabitants in 2020. It is classified as a global city as a cultural and commercial center, as well as a dominant manufacturing hub in North America.</p>
+                </div>
+            </section>
+            
+            
+            <section class="card">  
+                <div class="web"> 
+                    <h2>Web Dev Resources</h2>
+                    <ul class="links">
+                        <li><a href="https://dev.to/">Dev.to Community</a></li>
+                        <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                        <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                        <li><a href="https://www.w3schools.com/"> W3 Schools</a></li>
+                        <li><a href="https://www.udemy.com/es/"> Udemy</a></li>
+                        <li><a href="https://imageplaceholder.net/"> Image Placeholder</a></li>
+                    </ul>
+                </div>
+            </section>
+            
+        </main>
         
-        <p>@<span id="year"></span>🙌 Moroni Alanis Navarro 🙌 Tijuana, Mexico</p>
-        
-        <p>
-            <script>
-                document.write("Last Modification: " + document.lastModified)
-                </script>
+        <footer>
+            <script src="scripts/getdates.js" defer></script>
+            
+            <p>@2025 <span id="currentyear"></span>🙌 Moroni Alanis Navarro 🙌 Tijuana, Mexico</p>
+            
+            <p>
+                <script>
+                    document.write("Last Modification: " + document.lastModified)
+                    </script>
         </p>
         
         
-                
-
+        
+        
     </footer>
 </body>
 </html>
