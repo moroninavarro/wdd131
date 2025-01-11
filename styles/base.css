@@ -20,7 +20,7 @@ header{
     align-items: center;
     justify-content: center;
     padding: 20px;
-    border: 1px solid rgb (0 0 0 / 0.1);
+    border: 1px solid(0 0 0 / 0.1);
     grid-column: 1 / 7;
 }
 
@@ -33,16 +33,16 @@ main{
 }
 
 h1{
-    display: grid;
+    padding: 1rem 1rem 3rem;
     font-size: 2rem;
     justify-content: center;
-    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .navigation {
 	list-style: none;
 	display:flex;
-  
+    flex-wrap: wrap;
 	background-color: #333;
 	align-items:center;
   
@@ -51,12 +51,12 @@ h1{
 	flex: 1 1 auto; /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
 }
 .navigation a {
-	display: flex;
+	display: block;
 	color: #eee;
 	padding: 1rem;
 	text-decoration: none;
 	text-align:center;
-    justify-content:space-around;
+    
     
 }
 
@@ -106,6 +106,7 @@ h2{
     float: right;
     
 }
+
 
 h3{
     display: grid;
