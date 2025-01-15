@@ -12,3 +12,7 @@ deleteButton.textContent = '❌';
 
 li.append(deleteButton);
 li.append(li);
+
+button.addEventListener('click', function(){
+    
+})
