@@ -14,5 +14,13 @@ li.append(deleteButton);
 li.append(li);
 
 button.addEventListener('click', function(){
-    
+    if (input.value.trim() !==''){}
 })
+
+deleteButton.addEventListener('click', function(){
+    list.removeChild(li);
+    input.focus();
+});
+
+input.value = '';
+input.focus();
