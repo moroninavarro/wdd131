@@ -1,5 +1,7 @@
 *{
-
+    margin: 0.5;
+    padding: 0.5px;
+    
 }
 
 body{
@@ -12,7 +14,24 @@ header{
     display: grid;
     grid-gap: 1rem;
     padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #571a9c;
 }
+
+header, main {
+    margin: 0 auto;
+}
+
+
+h1{
+    display: flex;
+    grid-gap: 1rem;
+    padding: 20px;
+    color: white;
+}
+
+
+
 #menu{
     display: block;
     font-size: 2rem;
@@ -61,6 +80,10 @@ nav{
     color: rgb(0, 0, 0);
 }
 
+.navigation h1{
+    display: block;
+    color: #000;
+}
 
 
 .show li {
@@ -78,15 +101,31 @@ main{
     
 }
 
+h2{
+    display: block;
+    text-align: center;
+}
+
 .images{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 25px;
+    place-items: center;
+}
+
+.images figcaption {
+    display: block;
+    text-align: center;
 }
 
 
+
 footer {
-    background: wheat;
+    background: #571a9c;
     padding: 0em;
+    
     text-align:center;
     grid-column: 1 / 7;
+    color: white;
   }

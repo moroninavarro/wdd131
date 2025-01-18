@@ -21,8 +21,16 @@ header {
 
 }
 
+
 #menu{
     display: none;
 }
+
+h1{
+    display: flex;
+    grid-gap: 1rem;
+    padding: 20px;
+}
+
 
 }
