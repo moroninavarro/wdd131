@@ -50,12 +50,31 @@ main{
   
  
 }
+
+.left{
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+  margin: 10px;
+  }
+
+
 .right{
 display: grid;
 justify-content: center;
-<img src="images/sun.svg" alt="icon" width="40" height="40">
-}
+padding: 10px;
+margin: 10px;
 
+}
+@media (max-width: 768px) {
+.right h2::after{
+    content: url(sun.svg); 
+    width: 1px;
+    height: 1px;
+    font-size: 10px;
+    margin-left: -10px;
+}
+}
 
 footer {
     background: rgb(189, 32, 32);

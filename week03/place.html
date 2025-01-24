@@ -7,8 +7,8 @@
         <meta name="author" content="Moroni Alanis Navarro">
         <title>Moroni Alanis Navarro</title>
         
-        <link rel="stylesheet" href="styles/place.css">
-        <link rel="stylesheet" href="styles/place-larger.css">
+        <link rel="stylesheet" href="place.css">
+        <link rel="stylesheet" href="place-larger.css">
         
         
     </head>
@@ -48,23 +48,30 @@
                 
                 <section>
                     <div class="right">
-                        <h2>Weather <li> </h2>
+                        <h2>Weather </h2>
+                        <script src="place.js" defer></script>
                             <p>Temperature: 10 °C</p>
                             <p>Conditions: Partly Cloudly</p>
                             <p>Wind: 5 km/h</p>
-                            <p>Wind Chill: <span id="windChillValue" ></span></p>
+                            <p>Wind Chill: <span id= "windChillValue" ></span></p>
+
+                            <script>const temperature = 10;
+                                const windSpeed= 5;
+                                const windChill = calculateWindChill(temperature, windSpeed);
+                                document.getElementById("windChillValue").innerHTML = windChill.toFixed(2) + " °F"; 
+                            </script>
                             
                         </div>
                     </section>
                     
-                    
+                   
                     
                 </main>
                 
                 
                 
                 <footer>
-                    <script src="scripts/place.js" defer></script>
+                    <script src="place.js" defer></script>
                     
                     <p>@ <span id="CurrentYear"></span>  Moroni Alanis Navarro  Tijuana, Mexico</p>
                     

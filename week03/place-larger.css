@@ -1,4 +1,4 @@
-@media only screen and (min-width:40em)  {
+@media only screen and (min-width:50em)  {
 
     body {
         display: flex;
@@ -13,18 +13,29 @@
     }
     
     
-    h2{
+    .left h2{
         font-size: 25px;
         background-color: rgba(16, 122, 39, 0.836);
         color: white;
         padding: 15px;
         text-align: left;
-        margin-bottom: 20px;
-        transform: translateX(-65px);
+        margin-bottom: 10px;
+        transform: translateX(-95px);
         display: flex;
         justify-content: left;
         
-        
+    }
+
+    .right h2{
+        font-size: 25px;
+        background-color: rgba(16, 122, 39, 0.836);
+        color: white;
+        padding: 15px;
+        text-align: left;
+        margin-bottom: 10px;
+        transform: translateX(-30px);
+        display: flex;
+        justify-content: left;
         
     }
     .hero {
@@ -62,14 +73,16 @@
         right: 20px;
         width: 200px;
         text-align: center;
-        padding: 30px;
+        padding: 20px;
+        
 
     }
-    li::marker{
-        content: '⛅';
-        font-size: 1em;
-        display: flex;
-        align-items: flex-end;
+    .right h2::after{
+        content: "⛅";
+        font-size: 24px;
+        margin-left: 20px;
+       
+        
     }
     h1{
         display: flex;
