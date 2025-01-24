@@ -61,6 +61,8 @@ main{
   justify-content: center;
   padding: 20px;
   margin: 10px;
+  border-top: var(--bord);
+	border-left: var(--bord);
   }
 
 
