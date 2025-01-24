@@ -13,8 +13,22 @@
     }
     
     
-  
+    h2{
+        font-size: 25px;
+        background-color: rgba(16, 122, 39, 0.836);
+        color: white;
+        padding: 15px;
+        text-align: left;
+        margin-bottom: 20px;
+        transform: translateX(-65px);
+        display: flex;
+        justify-content: left;
+        
+        
+        
+    }
     .hero {
+        display: block;
         width: 100%;
         height: 60vh;
         object-fit: cover;
@@ -25,11 +39,42 @@
         display: grid;
         grid-column: 1/ 7;
     }
-  
+    .left{
+        
+        position: absolute;
+        height: 180px;
+        background-color: #ffffffb2;
+        top: 30%;
+        left: 20px;
+        width: 200px;
+        text-align: center;
+        padding: 50px;
+
+    }
+ 
+
+    .right{
+        border: 1px solid #ddd;
+        position: absolute;
+        height: 150px;
+        background-color: #ffffffb2;
+        top: 50%;
+        right: 20px;
+        width: 200px;
+        text-align: center;
+        padding: 30px;
+
+    }
+    li::marker{
+        content: '⛅';
+        font-size: 1em;
+        display: flex;
+        align-items: flex-end;
+    }
     h1{
         display: flex;
         grid-gap: 1rem;
-        padding: 20px;
+        padding: 30px;
         justify-content: center;
     }
     
