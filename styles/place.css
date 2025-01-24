@@ -7,7 +7,7 @@
 body {
   display: grid;
   height: 100vh;
-  grid-template:  1fr 1fr 1fr;
+ 
 }
 
 header{
@@ -16,7 +16,6 @@ header{
   align-items: center;
   justify-content: center;
   padding: 20px;
-  border: 1px solid(0 0 0 / 0.1);
   grid-column: 1 / 7;
   background-color: rgb(189, 32, 32);
 }
@@ -26,7 +25,7 @@ h1{
   padding: 1rem 1rem 3rem;
   font-size: 2rem;
   justify-content: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   grid-column: 1 / 7;
   color: white;
 }
@@ -88,7 +87,7 @@ footer {
 footer p {
   color: #ffffff;
   margin: 1rem;
-  padding: 1;
+  padding: 1px;
 	font-weight: 600;
 	font-family: hebrew;
 
