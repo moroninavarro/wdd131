@@ -3,9 +3,9 @@ document.getElementById("CurrentYear").textContent = new Date().getFullYear();
 
 document.getElementById("lastModified").textContent = document.lastModified;
 
-document.write(windChill.toFixed(2) +  " °F");
 
 
+console.log
 
 let temperature = 10;
 let windSpeed = 5;
@@ -17,11 +17,11 @@ function calculateWindChill (temperature, windSpeed) {
 
 if (temperature <=50 && windSpeed >3) {
     let windChill = calculateWindChill(temperature, windSpeed);
-    document.write(windChill.toFixed(2) +  " °F");
+    document.getElementById("value").textContent = windChill.toFixed(2) +  " °F";
 }
 
 else {
-    document.write("N/A");
+    document.getElementById("value").textContent= "N/A";
 
 }
 
