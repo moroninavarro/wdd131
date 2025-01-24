@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+:root {
+  --bord: 1px solid 777;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
 body {
   display: grid;
   height: 100vh;
