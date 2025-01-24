@@ -3,9 +3,9 @@ document.getElementById("CurrentYear").textContent = new Date().getFullYear();
 
 document.getElementById("lastModified").textContent = document.lastModified;
 
+//I dont know why but my calculateWindChill do not works.
 
-
-console.log
+document.addEventListener("DOMContentLoaded", function(){
 
 let temperature = 10;
 let windSpeed = 5;
@@ -15,13 +15,11 @@ function calculateWindChill (temperature, windSpeed) {
 
 }
 
-if (temperature <=50 && windSpeed >3) {
-    let windChill = calculateWindChill(temperature, windSpeed);
-    document.getElementById("value").textContent = windChill.toFixed(2) +  " °F";
-}
+if (temperature <=50 && windSpeed >3) {let windChill = calculateWindChill(temperature, windSpeed); document.getElementById("valid").textContent = windChill.toFixed(2) +  " °F";}
 
 else {
-    document.getElementById("value").textContent= "N/A";
+    document.getElementById("valid").textContent= "N/A";
 
 }
+});
 
