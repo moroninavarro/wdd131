@@ -52,16 +52,24 @@
     <div class="right">
         <h2>Weather </h2>
         <img src="styles/sun.svg" alt="icon">
-        <p>Temperature: 10 °C</p>
+        <p>Temperature: -8 °C</p>
         <p>Conditions: Partly Cloudly</p>
         <p>Wind: 5 km/h</p>
         <p>Wind Chill: <span id="windchill-value"></span></p>
         
         <script>
             function calculateWindChill(temperature, windSpeed){
+
                 var WindChill = 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed,0.16);
                 document.getElementById("windchill-value").innerHTML = WindChill.toFixed(2) + " °C";}
-                calculateWindChill(10,5);
+                calculateWindChill(-8, 5);
+                if (temperature <=10 && windSpeed > 4.8) {let windChill = calculateWindChill(temperature, windSpeed); document.getElementById("valid").textContent = windChill.toFixed(2) +  " °F";}
+
+                else {
+                document.getElementById("valid").textContent= "N/A";
+
+            }
+                
         </script>
         </div>
         
