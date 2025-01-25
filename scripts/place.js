@@ -3,7 +3,7 @@ document.getElementById("CurrentYear").textContent = new Date().getFullYear();
 
 document.getElementById("lastModified").textContent = document.lastModified;
 
-//I dont know why but my calculateWindChill do not works.
+//I dont know why but my calculateWindChill do not works...
 
 document.addEventListener("DOMContentLoaded", function(){
 
