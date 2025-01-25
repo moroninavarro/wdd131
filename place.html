@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="This page is about a place where I live or have visited or wish to visit, I choosed China.">
+        <meta name="description" content="The purpose of this page is about a place where I live or have visited or wish to visit, develop the layout, design and content of one page.">
         <meta name="author" content="Moroni Alanis Navarro">
-        <title>WDD 131 -COUNTRY OR PLACE PAGE</title>
+        <title>CHINA- Country Or Place</title>
         
         <link rel="stylesheet" href="styles/place.css">
         <link rel="stylesheet" href="styles/place-larger.css">
@@ -55,9 +55,14 @@
         <p>Temperature: 10 °C</p>
         <p>Conditions: Partly Cloudly</p>
         <p>Wind: 5 km/h</p>
-        <p>Wind Chill:</p>
-        <span id="valid">9.8 °C</span>
+        <p>Wind Chill: <span id="windchill-value"></span></p>
         
+        <script>
+            function calculateWindChill(temperature, windSpeed){
+                var WindChill = 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed,0.16);
+                document.getElementById("windchill-value").innerHTML = WindChill.toFixed(2) + " °C";}
+                calculateWindChill(10,5);
+        </script>
         </div>
         
     </section>
