@@ -73,15 +73,25 @@ padding: 10px;
 margin: 10px;
 
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 .right h2::after{
-    content: url(sun.svg); 
+    
     width: 1px;
     height: 1px;
     font-size: 10px;
     margin-left: -10px;
     justify-content: center;
 }
+.mobile-svg{
+  display: none;
+}
+
+.mobile-svg{
+  display: block;
+  margin-top: 10px;
+
+}
+
 }
 
 footer {

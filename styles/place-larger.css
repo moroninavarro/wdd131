@@ -96,6 +96,10 @@
         padding: 30px;
         justify-content: center;
     }
-    
-    
+    img{
+        display: none;
     }
+    
+  
+    }
+
