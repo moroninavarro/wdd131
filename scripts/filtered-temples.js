@@ -143,6 +143,8 @@ smallLink.addEventListener("click", () =>{
         temple.location.includes("Lima")
     ));
 });
+
+
 function createTempleCard(filteredTemples) {
     document.querySelector(".res-grid").innerHTML = "";
     filteredTemples.forEach(temple => {
