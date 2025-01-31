@@ -106,18 +106,28 @@ h2{
     text-align: center;
 }
 
-.images{
+.res-grid{
     display: grid;
+    padding: 1px;
     
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    grid-gap: 25px;
-    place-items: center;
+    gap: 10px;
+    margin-left: -20px;
+    
+    text-align: center;
+    
+    
 }
 
-.images figcaption {
+section{
     display: block;
-    text-align: center;
+    background-color: rgb(183, 187, 166);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    
 }
+
+
 
 
 

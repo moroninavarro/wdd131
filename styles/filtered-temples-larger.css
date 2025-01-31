@@ -32,5 +32,32 @@ h1{
     padding: 20px;
 }
 
+.res-grid{
+    display: grid;
+    padding: 1px;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    margin-left: -260px;
+    padding-left: 20px;
+    text-align: center;
+    
+    
+}
+
+section{
+    display: block;
+    background-color: rgb(183, 187, 166);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    
+}
+@media (max-width: 1124px){
+    .res-grid{
+        grid-template-columns: repeat(2, 1fr); 
+     }
+ }
+
+
 
 }
