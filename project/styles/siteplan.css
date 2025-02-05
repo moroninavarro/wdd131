@@ -1,0 +1,36 @@
+*{
+    margin: auto;
+    padding: 0%;
+}
+
+
+body{
+    padding: 10px;
+    margin: 10px;
+    background-color: beige;
+}
+h1{
+    padding: 10px;
+}
+h1, h2{
+    padding: 10px;
+    
+    font-family: Alegreya, serif;
+}
+h3{
+   
+ 
+    font-family: Alegreya, serif;
+}
+main figure{
+    padding: 10px;
+    margin: 10px;
+}
+figcaption{
+    font-family: Nunito, sans-serif;
+}
+p{
+    
+    margin: 10px;
+    font-family: Nunito, sans-serif;
+}
