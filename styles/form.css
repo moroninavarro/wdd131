@@ -1,0 +1,54 @@
+header{
+    background: #390774;
+    padding: 3em;
+    
+    text-align:center;
+    grid-column: 1 / 7;
+    color: white;
+}
+
+h1{
+    font-family: Nunito, sans-serif;
+}
+
+main{
+    font-family: Nunito, sans-serif;
+}
+
+
+select{
+    display: block;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: .9rem;
+    width: 100%;
+    max-width: 400%;
+   
+}
+option{
+    display: block;
+    width: 100%;
+    max-width: 400%;
+   
+}
+
+
+.stars{
+    display: flex;
+}
+
+
+label{
+    display: grid;
+   justify-content: center;
+   padding: 10px;
+}
+
+footer {
+    font-family: Nunito, sans-serif;
+    background: #390774;
+    padding: 2em;
+    text-align:center;
+    grid-column: 1 / 7;
+    color: white;
+  }
