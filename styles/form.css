@@ -20,13 +20,19 @@ h1{
     font-family: Nunito, sans-serif;
 }
 
+h3{
+   
+    margin-top: 40px;
+}
+
 form{
     background-color: rgb(178, 168, 201);
     
-    margin: 1px;
+    padding: 10px;
 }
 main{
     font-family: Nunito, sans-serif;
+   
 }
 
 
@@ -37,29 +43,81 @@ select{
     font-size: .9rem;
     width: 100%;
     max-width: 400%;
-   
+    color: #3b1961;
 }
-
+select option{
+    color: #3b1961;
+}
 
 
 .stars {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+    flex-direction: row-reverse;
+    margin: 40px auto;
+    position: absolute;
+    top: 220px;
+    
 	
 }
 
-.stars label{
-    display: block;
+.stars input{
+    display: none;
+}
+
+.stars > label{
+    width: 30px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 30px;
+    transition: 0.2s ease;
+    color: orange;
+}
+
+.stars label:hover{
+    color: #ff69b4;
+    transition: 0.2s ease;
+}
+
+.stars label:active::before{
+   transform: scale(1.1);
+}
+.stars label::before{
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+ }
+
+
+ .stars input:checked ~ label::before{
+    content: '\2605';
+ }
+@-moz-document url-prefix() {
+ .stars input:checked ~ label::before{
+     font-size: 36px;
+     line-height: 21px;
+ } 
+ }
+
+input[type="radio"]{
+    display: none;
     position: relative;
-    top: -15px;
-    right: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 
 
-input [type="date"]{
-  display: block;
-    
+#thedate{
+    display: block;
+    height: 30px;
+    transform: translateX(-13px);
+    font-size: 1rem;
+    width: 100%;
+    max-width: 105%;
 }
 
 
@@ -67,28 +125,32 @@ input [type="date"]{
     display: block;
     
 }
-
+.mark input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+}
 
 textarea{
     width: 425px;
-    height: 150px;
+    height: 165px;
     
 }
 
-.yourname input [type="text"]{
+#TheName{
     display: block;
-    justify-content: center;
     padding-top: .5rem;
     padding-bottom: .5rem;
-    width: 900%;
-    max-width: 430px;
-    font-size: 24px;
+    width: 1000%;
+    max-width: 420px;
+    transform: translateX(-10px);
+    font-size: 35px;
+
 }
 
 .buttom{
     display: grid;
     justify-content: center;
-    transform: translateX(-145px);
+   
 }
 
 /* Sumit Button */
@@ -99,7 +161,8 @@ textarea{
     padding-bottom: .5rem;
     width: 900%;
     max-width: 430px;
-    font-size: 24px;
+    transform: translateX(-115px);
+    font-size: 35px;
     
 }
 

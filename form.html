@@ -33,8 +33,11 @@
 
            
             <h3>Product Name</h3>
-            <select name="TheForm" id="text" required>
+            <select name="TheForm" id="products" required>
                 <option disabled selected>Select a Product...</option>
+                
+             
+
             </select>
            
            
@@ -43,11 +46,11 @@
             
             <h3>Overall Rating</h3>
             <div class="stars">
-            <input type="radio" id="onestar" name="stars" required>&star;<label for="onestar">&star;</label>
-            <input type="radio" id="twostar" name="stars" required>&star;&star;<label for="twostar">&star;&star;</label>
-            <input type="radio" id="threestar" name="stars" required>&star;&star;&star;<label for="threestar">&star;&star;&star;</label>
-            <input type="radio" id="fourstar" name="stars" required>&star;&star;&star;&star;<label for="fourstar">&star;&star;&star;&star;</label>
-            <input type="radio" id="fivestar" name="stars" required>&star;&star;&star;&star;&star;<label for="fivestar">&star;&star;&star;&star;&star;</label>
+            <input type="radio" id="onestar" name="stars" required><label for="onestar"></label>
+            <input type="radio" id="twostar" name="stars" required><label for="twostar"></label>
+            <input type="radio" id="threestar" name="stars" required><label for="threestar"></label>
+            <input type="radio" id="fourstar" name="stars" required><label for="fourstar"></label>
+            <input type="radio" id="fivestar" name="stars" required><label for="fivestar"></label>
             </div>
            
 
@@ -55,7 +58,9 @@
            
                 <h3>Date of Installation</h3>
                 <div class="date">
-                <input type="date" name="completeDate">
+                    <label>
+                <input type="date" id="thedate" name="completeDate" required>
+                </label>
                 </div>
             
 
@@ -63,10 +68,10 @@
             
                 <h3>Which features did you find useful in the product? <br>(Check all that apply)</h3>
                 <div class="mark">
-                <label> <input type="checkbox" name="durability" value="yes">Durability</label>
-                <label> <input type="checkbox" name="Use" value="yes">Ease of Use</label>
-                <label> <input type="checkbox" name="performance" value="yes">Performance</label>
-                <label> <input type="checkbox" name="design" value="yes">Design</label>
+                <label> <input type="checkbox" id="choose" name="durability" value="yes">Durability</label>
+                <label> <input type="checkbox" id="choose" name="Use" value="yes">Ease of Use</label>
+                <label> <input type="checkbox" id="choose" name="performance" value="yes">Performance</label>
+                <label> <input type="checkbox" id="choose" name="design" value="yes">Design</label>
                 </div>
             
             
@@ -78,15 +83,17 @@
 
            
                 <h3>Your Name (optional)</h3>
-                <div class="yourname">
-                <input type="text" id="TheName" name="Your Name">
+                <div class="put">
+                <label><input type="text" id="TheName" name="Your Name"></label>
                 </div>
             
 
 
           
                 <div class="buttom">
+                    <label>
                 <input type="submit" value="Post Review">
+                </label>
                 </div>
             
 
