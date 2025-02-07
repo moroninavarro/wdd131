@@ -25,55 +25,66 @@
 
         <form method="get" action="review.html">
 
+            
 
-
-            <label>
-                <legend>Product Name</legend>
-            <select name="TheForm" id="text" required>
-            <option disabled selected>Select a Product...</option>
            
+            <h3>Product Name</h3>
+            <select name="TheForm" id="text" required>
+                <option disabled selected>Select a Product...</option>
             </select>
-            </label>
+           
+           
 
 
-            <label>
-            <legend> Overall Rating </legend>
+            
+            <h3>Overall Rating</h3>
             <div class="stars">
-            <input type="radio" id="fivestar" name="stars" required><label for="fivestar"></label>
-            <input type="radio" id="fourstar" name="stars" required><label for="fourstar"></label>
-            <input type="radio" id="threestar" name="stars" required><label for="threestar"></label>
-            <input type="radio" id="twostar" name="stars" required><label for="twostar"></label>
-            <input type="radio" id="onestar" name="stars" required><label for="onestar"></label>
+            <input type="radio" id="onestar" name="stars" required>&star;<label for="onestar">&star;</label>
+            <input type="radio" id="twostar" name="stars" required>&star;&star;<label for="twostar">&star;&star;</label>
+            <input type="radio" id="threestar" name="stars" required>&star;&star;&star;<label for="threestar">&star;&star;&star;</label>
+            <input type="radio" id="fourstar" name="stars" required>&star;&star;&star;&star;<label for="fourstar">&star;&star;&star;&star;</label>
+            <input type="radio" id="fivestar" name="stars" required>&star;&star;&star;&star;&star;<label for="fivestar">&star;&star;&star;&star;&star;</label>
             </div>
-            </label>
+           
 
 
-            <label> 
-                <legend>Date of Installation</legend>
+           
+                <h3>Date of Installation</h3>
+                <div class="date">
                 <input type="date" name="completeDate">
-                <div>Which features did you find useful in the product? <br>(Check all that apply)</div>
+                </div>
+            
+
+
+            
+                <h3>Which features did you find useful in the product? <br>(Check all that apply)</h3>
+                <div class="mark">
                 <label> <input type="checkbox" name="durability" value="yes">Durability</label>
                 <label> <input type="checkbox" name="Use" value="yes">Ease of Use</label>
                 <label> <input type="checkbox" name="performance" value="yes">Performance</label>
                 <label> <input type="checkbox" name="design" value="yes">Design</label>
-            </label>
+                </div>
             
             
-            <label>
-                <legend>Written Review</legend>
-            <textarea name="Written Review" id="write"></textarea>
-            </label>
-
-            <label>
-                <legend>Your Name</legend>
-                <input type="text" id="TheName" name="Your Name">
+           
+                <h3>Written Review (optional)</h3>
+                <textarea name="Written Review" id="write"></textarea>
                 
-            </label>
+            
+
+           
+                <h3>Your Name (optional)</h3>
+                <div class="yourname">
+                <input type="text" id="TheName" name="Your Name">
+                </div>
+            
 
 
-            <label>
+          
+                <div class="buttom">
                 <input type="submit" value="Post Review">
-            </label>
+                </div>
+            
 
 
         </form>
@@ -83,7 +94,7 @@
 
     <footer>
         
-        <p>@ <span id="CurrentYear"></span> 🙌 Moroni Alanis Navarro 🙌 Tijuana, Mexico</p>
+        <p>@<span id="CurrentYear"></span> 🙌 Moroni Alanis Navarro 🙌 Tijuana, Mexico</p>
 
         <p>
         <script>

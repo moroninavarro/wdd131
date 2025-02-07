@@ -1,6 +1,15 @@
+*{
+    padding: 1px;
+    margin: 1px;
+}
+
+body{
+    padding: 5px;
+    margin: 5px;
+}
 header{
-    background: #390774;
-    padding: 3em;
+    background: #3b1961;
+    padding: .5rem;
     
     text-align:center;
     grid-column: 1 / 7;
@@ -11,6 +20,11 @@ h1{
     font-family: Nunito, sans-serif;
 }
 
+form{
+    background-color: rgb(178, 168, 201);
+    
+    margin: 1px;
+}
 main{
     font-family: Nunito, sans-serif;
 }
@@ -25,29 +39,83 @@ select{
     max-width: 400%;
    
 }
-option{
+
+
+
+.stars {
+    display: flex;
+    justify-content: space-around;
+	
+}
+
+.stars label{
     display: block;
-    width: 100%;
-    max-width: 400%;
-   
+    position: relative;
+    top: -15px;
+    right: 20px;
 }
 
 
-.stars{
-    display: flex;
+
+input [type="date"]{
+  display: block;
+    
+}
+
+
+.mark label{
+    display: block;
+    
+}
+
+
+textarea{
+    width: 425px;
+    height: 150px;
+    
+}
+
+.yourname input [type="text"]{
+    display: block;
+    justify-content: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    width: 900%;
+    max-width: 430px;
+    font-size: 24px;
+}
+
+.buttom{
+    display: grid;
+    justify-content: center;
+    transform: translateX(-145px);
+}
+
+/* Sumit Button */
+.buttom input[type="submit"]{
+    
+    display: block;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    width: 900%;
+    max-width: 430px;
+    font-size: 24px;
+    
 }
 
 
 label{
-    display: grid;
-   justify-content: center;
-   padding: 10px;
+    display: block;
+    justify-content: center;
+    padding: 10px;
 }
+
+
 
 footer {
     font-family: Nunito, sans-serif;
-    background: #390774;
-    padding: 2em;
+    background: #3b1961;
+    padding: .5em;
     text-align:center;
     grid-column: 1 / 7;
     color: white;
