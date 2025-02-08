@@ -173,7 +173,11 @@ label{
     padding: 10px;
 }
 
-
+#visits{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: larger;
+}
 
 footer {
     font-family: Nunito, sans-serif;

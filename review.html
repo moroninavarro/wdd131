@@ -1,0 +1,31 @@
+<body>
+    <script src="scripts/form.js" defer></script>
+    <main>
+     <h1>Using localStorage</h1>
+        
+          <p>Number of visits:  <span class="visits"></span></p>
+
+
+        <script>
+            window.addEventListener('load', function(){
+            const visitsDisplay = document.querySelector(".visits");
+
+            let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+            if (numVisits === 0 ){
+                visitsDisplay.textContent = `This is your first visit. 😊 Welcome!`;
+                numVisits++;
+            }
+            else{
+                numVisits++;
+                localStorage.setItem("numVisits-ls", numVisits);
+                visitsDisplay.textContent = numVisits;
+
+            }
+        });
+
+        </script>
+    
+    
+    </main>
+</body>
