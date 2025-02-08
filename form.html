@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/form-larger.css">
-    
+
 </head>
 <body>
     <script src="scripts/form.js" defer></script>
@@ -31,7 +31,26 @@
 
         <form method="get" action="review.html">
             
-            
+        <script>
+            window.addEventListener('load', function(){
+            const visitsDisplay = document.querySelector(".visits");
+
+            let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+            if (numVisits === 0 ){
+                visitsDisplay.textContent = `This is your first visit. 😊 Welcome!`;
+                numVisits++;
+            }
+            else{
+                numVisits++;
+                localStorage.setItem("numVisits-ls", numVisits);
+                visitsDisplay.textContent = numVisits;
+
+            }
+        });
+
+        </script>
+    
 
            
             <h3>Product Name</h3>
