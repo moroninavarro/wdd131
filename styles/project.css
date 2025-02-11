@@ -15,7 +15,7 @@ header{
     grid-gap: 1rem;
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #571a9c;
+    background-color: rgb(206, 206, 160);
 }
 
 header, main {
@@ -38,7 +38,7 @@ h1{
     font-weight: 700;
     text-decoration: none;
     padding: .5rem .75rem;
-    background-color: #571a9c;
+    background-color: rgb(206, 206, 160);
     color: #ffffff;
 
 }
@@ -51,7 +51,7 @@ h1{
 }
 
 nav{
-    background-color:#571a9c;
+    background-color:rgb(206, 206, 160);
     
 }
 
@@ -132,7 +132,7 @@ section{
 
 
 footer {
-    background: #571a9c;
+    background: rgb(206, 206, 160);
     padding: 0em;
     
     text-align:center;
