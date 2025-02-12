@@ -44,6 +44,11 @@ h1{
     margin-top: auto;
 }
 
+.res-grid img {
+    display: grid;
+    
+}
+
 section{
     display: block;
     background-color: rgb(183, 187, 166);
