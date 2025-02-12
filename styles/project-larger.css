@@ -46,7 +46,7 @@ h1{
 
 .res-grid img {
     display: grid;
-    
+    /* Cambiar la posicion para que la imagen quede a la izquiewrda del cuadrado */
 }
 
 section{
