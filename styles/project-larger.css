@@ -1,5 +1,11 @@
 @media only screen and (min-width:40em)  {
 
+
+body{
+    color: #000000;
+    font-family: "Alegreya", sans-serif;
+
+}
 header {
     display: flex;
     align-items: center;
@@ -35,39 +41,56 @@ h1{
 .res-grid{
     display: grid;
     padding: 1px;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 10px;
-    margin-left: -230px;
     
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto); 
+    gap: 20px;
     text-align: center;
-    
     margin-top: auto;
 }
 
-.res-grid img {
-    display: grid;
-    /* Cambiar la posicion para que la imagen quede a la izquiewrda del cuadrado */
+.res-grid img{
+    
+    
+    height: 400px;
+    width: 90%;
+    grid-column: 1;
+    
+
 }
 
+.res-grid p{
+    grid-column: 2;
+    grid-row: 2;
+   align-self: center;
+   margin-top: -280px;
+}
+
+
 section{
-    display: block;
+    
+    padding: 1px;
     background-color: rgb(183, 187, 166);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-width: 1px;
+    height: 620px;
+    width: 1500px;
+    transform: translate(-300px);
+    
     
 }
 @media (max-width: 1124px){
     .res-grid{
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(1, 1fr); 
         margin-left: -80px;
         
      }
  }
 
  footer {
-    background: rgb(206, 206, 160);
+    background: #571a9c;
     padding: 10px;
     
     text-align:center;
