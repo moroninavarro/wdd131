@@ -118,14 +118,11 @@ contactUs.addEventListener("click", () =>{
 const contactForm= `
 <form id="contact-form">
             
-            <h3>Product Name</h3>
+            <h3>What are you looking for?</h3>
             <select name="TheForm" id="products" required>
-                <option value="" disabled selected>Select a Product...</option>
-                <option value="fc-1888">flux capacitor</option>
-                <option value="fc-2050">power laces</option>
-                <option value="fs-1987">time circuits</option>
-                <option value="ac-2000">low voltage reactor</option>
-                <option value="jj-1969">warp equalizer</option>
+                <option value="" disabled selected>Select an option...</option>
+                <option value="fc-1888">Rent</option>
+                <option value="fc-2050">Sale</option>
             </select>
             
             
@@ -151,13 +148,13 @@ const contactForm= `
             
             
             
-            <h3>Written Review (optional)</h3>
+            <h3>Send us your Name and phone number</h3>
             <textarea name="Written Review" id="write"></textarea>
             
           
             <div class="buttom">
                 <label>
-                    <input type="submit" value="Post Review">
+                    <input type="submit" value="SEND INFO">
                 </label>
             </div>
             
@@ -201,29 +198,15 @@ function createTempleCard(filteredTemples) {
 const products = [
   {
     id: "fc-1888",
-    name: "flux capacitor",
-    averagerating: 4.5
+    name: "Rent",
+    
   },
   {
     id: "fc-2050",
-    name: "power laces",
-    averagerating: 4.7
+    name: "Sale",
+    
   },
-  {
-    id: "fs-1987",
-    name: "time circuits",
-    averagerating: 3.5
-  },
-  {
-    id: "ac-2000",
-    name: "low voltage reactor",
-    averagerating: 3.9
-  },
-  {
-    id: "jj-1969",
-    name: "warp equalizer",
-    averagerating: 5.0
-  }
+
 ];
 
 window.addEventListener('load', function(){
