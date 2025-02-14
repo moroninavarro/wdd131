@@ -7,6 +7,7 @@
 body{
     color: #000000;
     font-family: "Alegreya", sans-serif;
+    background-color: rgba(245, 245, 220, 0.418);
 
 }
 
@@ -15,7 +16,7 @@ header{
     grid-gap: 1rem;
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: rgb(206, 206, 160);
+    background-color: rgb(255, 255, 255);
 }
 
 header, main {
@@ -38,7 +39,7 @@ h1{
     font-weight: 700;
     text-decoration: none;
     padding: .5rem .75rem;
-    background-color: rgb(206, 206, 160);
+    background-color: rgba(134, 132, 132, 0.705);
     color: #ffffff;
 
 }
@@ -51,7 +52,7 @@ h1{
 }
 
 nav{
-    background-color:rgb(206, 206, 160);
+    background-color:rgb(255, 255, 255);
     
 }
 
@@ -70,19 +71,19 @@ nav{
     padding: 0.75rem;
     text-align: right;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-weight: 700;
     transition: 0.5s;
     font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
 .navigation a:hover, navigation a:active {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 8, 8);
 }
 
 .navigation h1{
     display: block;
-    color: #000;
+    color: #ff0000;
 }
 
 
@@ -125,19 +126,19 @@ h2{
 
 }
 .res-grid p{
-    display:grid;
-    justify-items: left;
+    display: block;
+
 }
 
 
 section{
     display: grid;
-    background-color: rgb(183, 187, 166);
+    background-color: rgba(188, 190, 179, 0.363);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    height: 820px;
-    width: 1500px;
+    height: 1090px;
+    width: 500px;
     
 }
 
@@ -146,10 +147,123 @@ section{
 
 
 footer {
-    background: rgb(206, 206, 160);
+    background: rgb(255, 255, 255);
     padding: 0em;
     
     text-align:center;
     grid-column: 1 / 7;
-    color: white;
+    color: rgb(0, 0, 0);
+  }
+
+
+
+  form{
+    background-color:rgba(190, 194, 189, 0.726);
+    
+    padding: 10px;
+}
+main{
+    font-family: Nunito, sans-serif;
+   
+}
+
+
+select{
+    display: block;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: .9rem;
+    width: 100%;
+    max-width: 400%;
+    color: #3b1961;
+}
+select option{
+    color: #3b1961;
+}
+
+
+input[type="radio"]{
+    display: none;
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+
+
+
+#thedate{
+    display: block;
+    height: 30px;
+    transform: translateX(-13px);
+    font-size: 1rem;
+    width: 100%;
+    max-width: 105%;
+}
+
+
+.mark label{
+    display: block;
+    
+}
+.mark input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+}
+
+textarea{
+    width: 425px;
+    height: 165px;
+    
+}
+
+#TheName{
+    display: block;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    width: 1000%;
+    max-width: 420px;
+    transform: translateX(-10px);
+    font-size: 35px;
+
+}
+
+.buttom{
+    display: grid;
+    justify-content: center;
+   
+}
+
+/* Sumit Button */
+.buttom input[type="submit"]{
+    
+    display: block;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    width: 900%;
+    max-width: 430px;
+    transform: translateX(-130px);
+    font-size: 35px;
+    
+}
+
+
+label{
+    display: block;
+    justify-content: center;
+    padding: 10px;
+}
+
+#visits{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: larger;
+}
+
+footer {
+    font-family: Nunito, sans-serif;
+    background:  rgb(255, 255, 255);
+    padding: .5em;
+    text-align:center;
+    grid-column: 1 / 7;
+    color: rgb(0, 0, 0);
   }
