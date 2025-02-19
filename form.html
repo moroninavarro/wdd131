@@ -1,3 +1,4 @@
+<!-- I added the localStorage at the end in the footer -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,16 +101,17 @@
                 <label> <input type="checkbox" id="choose4" name="design" value="yes">Design</label>
                 </div>
             
-            
-           
+                <div class="container">
+                <div class="myh3">
                 <h3>Written Review (optional)</h3>
-                <textarea name="Written Review" id="write"></textarea>
                 
+                <textarea name="Written Review" id="write"></textarea>
+                </div>
             
 
            
-                <h3>Your Name (optional)</h3>
                 <div class="put">
+                    <h3>Your Name (optional)</h3>
                 <label><input type="text" id="TheName" name="Your Name"></label>
                 </div>
             
@@ -121,7 +123,7 @@
                 <input type="submit" value="Post Review">
                 </label>
                 </div>
-            
+            </div>
 
 
         </form>
@@ -138,6 +140,7 @@
             document.write("Last Modification: " + document.lastModified)
         </script>
         </p>
+        <p>Number of visits:  <span class="visits"></span></p>
     </footer>
 </body>
 </html>
